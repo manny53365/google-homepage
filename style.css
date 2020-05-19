@@ -1,0 +1,37 @@
+nav {
+    width: 100%;
+    display: flex;
+}
+
+#navbar-left ul li {
+    justify-content: left;
+    height: 20px;
+    list-style-type: none;
+    display: inline-block;
+    margin:2px;
+}
+
+#navbar-left ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+#navbar-right {
+    justify-content: right;
+    justify-items: right;
+    border: 2px solid black;
+}
+
+#navbar-right ul li {
+    float:right;
+    height: 20px;
+    list-style: none;
+    display: flex-end;
+    margin:2px;
+    border: 2px solid black;
+}
+
+#navbar-right ul li a {
+    text-decoration: none;
+    color: grey;
+}
