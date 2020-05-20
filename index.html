@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>Google Test HTML</title>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Google</title>
     </head>
-
     <body>
-        <nav>
-            <div id="navbar-left">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
-                </ul>
-                    <div id="navbar-right">
-                        <ul>
-                            <li><a href="#">Gmail</a></li>
-                            <li><a href="#">Images</a></li>
-                            <li><a href="#">Widget</a></li>
-                            <li><a href="#">Sign In</a></li>
-                        </ul>
-                    </div>
-            </div>
-    </nav>
-        <main>
-            <h1>Hello, World!</h1>
-        </main>
+        <div class="grid">
+            <header>
+                <div class="nav flex-start">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                </div>
+                <div class="nav flex-end">
+                    <ul>
+                        <li><a href="#">Gmail</a></li>
+                        <li><a href="#">Images</a></li>
+                        <li><a href="#"><div id="waffle">
+                            <img src="menu.png">
+                        </div></a></li>
+                        <li><a href="#" id="signin">Sign In</a></li>
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <div class="content">
+                    <img src="googlelogo_color_272x92dp.png" id="main-logo">
+                    <form id="search-form" action="./search" method="POST">
+                        <div id="search-box">
+                            <input type="text" name="search-box">
+                        </div>
+                        <div id="search-buttons">
+                            <input type="submit" value="Google Search" name="search">
+                            <input type="submit" value="I'm Feeling Lucky" name="search">
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <div class="nav flex-start">
+                    <ul>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="nav flex-end">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
